@@ -4,12 +4,12 @@ name: Github Actions 실행시켜보기
 # Event : 실행되는 시점 트리거
 # main브랜치에 push될떄 실행됨
 on:
-  pull_request:
-    branches:
-    - main
-  # push:
+  # pull_request:
   #   branches:
   #   - main
+  push:
+    branches:
+    - main
 
 # 1개의 workflow에는 여러개이상의 job이 존재 가능
 # 여러 job들은 병렬적으로 수행됨
